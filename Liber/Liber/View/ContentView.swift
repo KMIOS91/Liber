@@ -9,10 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-           Label("Livre", systemImage: "book")
+        ZStack {
+            VStack {
+                Label("Livre", systemImage: "book")
+            }
+            .padding()
         }
-        .padding()
     }
 }
 
