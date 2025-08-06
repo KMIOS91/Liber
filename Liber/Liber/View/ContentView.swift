@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ZStack {
-            Color("background")
+            Color("backgroundColor")
             VStack {
                 Label("Livre", systemImage: "book")
             }
