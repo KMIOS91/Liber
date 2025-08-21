@@ -15,11 +15,12 @@ struct ContentView: View {
             
             VStack {
                 Button {
-                    <#code#>
+                    
                 } label: {
                     Image(systemName: "barcode.viewfinder")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
+                        .foregroundStyle(.white)
                 }
             }
             .padding()
