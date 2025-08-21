@@ -14,6 +14,7 @@ struct ContentView: View {
                 .ignoresSafeArea()
             VStack {
                 Label("Livre", systemImage: "book")
+                Image(systemName: "barcode.viewfinder")
             }
             .padding()
         }
