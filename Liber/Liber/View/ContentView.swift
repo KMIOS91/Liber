@@ -11,6 +11,7 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             Color("backgroundColor")
+                .ignoresSafeArea()
             VStack {
                 Label("Livre", systemImage: "book")
             }
