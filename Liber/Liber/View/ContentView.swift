@@ -13,8 +13,10 @@ struct ContentView: View {
             Color("backgroundColor")
                 .ignoresSafeArea()
             VStack {
-                Label("Livre", systemImage: "book")
                 Image(systemName: "barcode.viewfinder")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    
             }
             .padding()
         }
