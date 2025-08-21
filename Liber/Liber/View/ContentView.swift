@@ -12,11 +12,15 @@ struct ContentView: View {
         ZStack {
             Color("backgroundColor")
                 .ignoresSafeArea()
+            
             VStack {
-                Image(systemName: "barcode.viewfinder")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    
+                Button {
+                    <#code#>
+                } label: {
+                    Image(systemName: "barcode.viewfinder")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                }
             }
             .padding()
         }
