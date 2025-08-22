@@ -17,7 +17,7 @@ struct ContentView: View {
             
             VStack {
                 Button {
-                    congfigureQRCodes.showCode = true 
+                    congfigureQRCodes.showCode = true
                     
                 } label: {
                     Image(systemName: "barcode.viewfinder")
@@ -28,7 +28,7 @@ struct ContentView: View {
                 .sheet(isPresented: $congfigureQRCodes.showCode) {
                     CodeScannerView(
                         codeTypes: [.qr],
-                        simulatedData: "Paul Hudson",
+                        simulatedData: "Modibo",
                         completion:
                         congfigureQRCodes.handCodeScanner
                     )
