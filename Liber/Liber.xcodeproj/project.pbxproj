@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		4F9F749C2E57F8E8004FA8DB /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 4F9F749B2E57F8E8004FA8DB /* CodeScanner */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		4FE518062E33BC9500A8ED8B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -65,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F9F749C2E57F8E8004FA8DB /* CodeScanner in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +130,7 @@
 			);
 			name = Liber;
 			packageProductDependencies = (
+				4F9F749B2E57F8E8004FA8DB /* CodeScanner */,
 			);
 			productName = Liber;
 			productReference = 4FE517F82E33BC9300A8ED8B /* Liber.app */;
@@ -585,6 +591,13 @@
 			relativePath = ../../CodeScanner;
 		};
 /* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4F9F749B2E57F8E8004FA8DB /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CodeScanner;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4FE517F02E33BC9300A8ED8B /* Project object */;
 }

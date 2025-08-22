@@ -6,8 +6,10 @@
 //
 
 import SwiftUI
-
+import CodeScanner
+ 
 struct ContentView: View {
+    @Bindable var congfigureQRCodes = CongfigureQRCodes()
     var body: some View {
         ZStack {
             Color("backgroundColor")
@@ -15,12 +17,21 @@ struct ContentView: View {
             
             VStack {
                 Button {
+                    congfigureQRCodes.showCode = true 
                     
                 } label: {
                     Image(systemName: "barcode.viewfinder")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .foregroundStyle(.white)
+                }
+                .sheet(isPresented: $congfigureQRCodes.showCode) {
+                    CodeScannerView(
+                        codeTypes: [.qr],
+                        simulatedData: "Paul Hudson",
+                        completion:
+                        congfigureQRCodes.handCodeScanner
+                    )
                 }
             }
             .padding()
