@@ -29,9 +29,22 @@
 		4FE5180F2E33BC9500A8ED8B /* LiberUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiberUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		4F9F74982E57D3A0004FA8DB /* Exceptions for "Liber" folder in "Liber" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 4FE517F72E33BC9300A8ED8B /* Liber */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		4FE517FA2E33BC9300A8ED8B /* Liber */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				4F9F74982E57D3A0004FA8DB /* Exceptions for "Liber" folder in "Liber" target */,
+			);
 			path = Liber;
 			sourceTree = "<group>";
 		};
@@ -195,6 +208,9 @@
 			);
 			mainGroup = 4FE517EF2E33BC9300A8ED8B;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				4F9F74962E57D16D004FA8DB /* XCLocalSwiftPackageReference "../../CodeScanner" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 4FE517F92E33BC9300A8ED8B /* Products */;
 			projectDirPath = "";
@@ -400,6 +416,8 @@
 				DEVELOPMENT_TEAM = 99UMC25BBL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Liber/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to scan QR codes.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -428,6 +446,8 @@
 				DEVELOPMENT_TEAM = 99UMC25BBL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Liber/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to scan QR codes.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -558,6 +578,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		4F9F74962E57D16D004FA8DB /* XCLocalSwiftPackageReference "../../CodeScanner" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../../CodeScanner;
+		};
+/* End XCLocalSwiftPackageReference section */
 	};
 	rootObject = 4FE517F02E33BC9300A8ED8B /* Project object */;
 }
