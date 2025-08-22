@@ -33,9 +33,22 @@
 		4FE5180F2E33BC9500A8ED8B /* LiberUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiberUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		4F9F74982E57D3A0004FA8DB /* Exceptions for "Liber" folder in "Liber" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 4FE517F72E33BC9300A8ED8B /* Liber */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		4FE517FA2E33BC9300A8ED8B /* Liber */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				4F9F74982E57D3A0004FA8DB /* Exceptions for "Liber" folder in "Liber" target */,
+			);
 			path = Liber;
 			sourceTree = "<group>";
 		};

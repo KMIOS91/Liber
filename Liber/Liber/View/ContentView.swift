@@ -6,13 +6,33 @@
 //
 
 import SwiftUI
-
+import CodeScanner
+ 
 struct ContentView: View {
+    @Bindable var congfigureQRCodes = CongfigureQRCodes()
     var body: some View {
         ZStack {
             Color("backgroundColor")
+                .ignoresSafeArea()
+            
             VStack {
-                Label("Livre", systemImage: "book")
+                Button {
+                    congfigureQRCodes.showCode = true
+                    
+                } label: {
+                    Image(systemName: "barcode.viewfinder")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .foregroundStyle(.white)
+                }
+                .sheet(isPresented: $congfigureQRCodes.showCode) {
+                    CodeScannerView(
+                        codeTypes: [.qr],
+                        simulatedData: "Modibo",
+                        completion:
+                        congfigureQRCodes.handCodeScanner
+                    )
+                }
             }
             .padding()
         }
