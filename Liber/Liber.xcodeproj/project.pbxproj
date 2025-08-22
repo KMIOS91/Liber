@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		4F9F749C2E57F8E8004FA8DB /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 4F9F749B2E57F8E8004FA8DB /* CodeScanner */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		4FE518062E33BC9500A8ED8B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F9F749C2E57F8E8004FA8DB /* CodeScanner in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			);
 			name = Liber;
 			packageProductDependencies = (
+				4F9F749B2E57F8E8004FA8DB /* CodeScanner */,
 			);
 			productName = Liber;
 			productReference = 4FE517F82E33BC9300A8ED8B /* Liber.app */;
@@ -195,6 +201,9 @@
 			);
 			mainGroup = 4FE517EF2E33BC9300A8ED8B;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				4F9F74962E57D16D004FA8DB /* XCLocalSwiftPackageReference "../../CodeScanner" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 4FE517F92E33BC9300A8ED8B /* Products */;
 			projectDirPath = "";
@@ -400,6 +409,8 @@
 				DEVELOPMENT_TEAM = 99UMC25BBL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Liber/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to scan QR codes.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -428,6 +439,8 @@
 				DEVELOPMENT_TEAM = 99UMC25BBL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Liber/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to scan QR codes.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -558,6 +571,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		4F9F74962E57D16D004FA8DB /* XCLocalSwiftPackageReference "../../CodeScanner" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../../CodeScanner;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4F9F749B2E57F8E8004FA8DB /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CodeScanner;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4FE517F02E33BC9300A8ED8B /* Project object */;
 }
